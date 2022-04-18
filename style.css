@@ -139,22 +139,17 @@ body.no-scroll {
 }
 
 .modal {
-    /* display: none; */
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    /* height: 100%; */
-    /* width: 0; */
-    height: 0;
+    height: 100vh;
+    display: none;
     overflow: hidden;
-    transition: all 0.5s;
 }
 
 .modal.show {
-    /* display: block; */
-    /* width: 100%; */
-    height: 100vh;
+    display: block;
 }
 
 .modal .backdrop {

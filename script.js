@@ -5,6 +5,7 @@ function showModal(dataId) {
     const modalElement = document.querySelector('.modal[data-id="' + dataId + '"]');
     if(modalElement) {
         modalElement.classList.add('show');
+        modalElement.querySelector('.modal-content').scrollTo(0, 0);
         document.body.classList.add('no-scroll');
     }
 }
